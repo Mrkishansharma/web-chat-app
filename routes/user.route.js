@@ -76,7 +76,7 @@ function sendMailForVerification(name, email, userId) {
 
     const token  = jwt.sign({ userId }, process.env.SECRET_KEY, { expiresIn : "1h" } )
 
-    const backendUrl = 'http://localhost:8080'
+    const backendUrl = 'https://web-chat-app-jdsu.onrender.com'
 
     var mailOptions = {
         from: "kishansharma6377@gmail.com",
